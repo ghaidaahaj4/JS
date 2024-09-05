@@ -1,5 +1,3 @@
-const { log } = require("console")
-
 const movieRating = 2
 const movieBudget = 1000
 const movieGenere = "Horror"
