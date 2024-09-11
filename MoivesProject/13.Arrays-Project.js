@@ -92,6 +92,6 @@ console.log(movies17.indexOf(movieToFind17));
 const movies18 = ['Inception', 'Interstellar', 'Tenet'];
 console.log(movies18.reverse()); 
 
-// 19. Sort Movies Release Years
+// 19.
 const releaseYears19 = [2001, 2023, 1998, 2014];
-console.log(releaseYears19.sort()); // Output: [1998, 2001, 2014, 2023]
+console.log(releaseYears19.sort()); 
