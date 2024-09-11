@@ -1,5 +1,3 @@
-const { log } = require("console");
-
 // 1.
 const movieLibrary1 = ['Inception', 'The Matrix', 'Interstellar'];
 const movieToCheck1 = 'Inception';
