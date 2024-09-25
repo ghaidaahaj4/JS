@@ -31,18 +31,33 @@ let movies = [
     { title: "Interstellar", year: 2014, ratings: [5, 5, 4], director: { name: "Christopher Nolan" } }
 ];
 
-// Update all movies to a different year
+
 movies.forEach(movie => movie.year = 2021);
 
-// Add a new method to the director object
+
 movies.forEach(movie => {
     movie.director.addNewMovie = function(newMovie) {
         console.log(`New movie added: ${newMovie}`);
     };
 });
 
-// Modify the rating for one of the movies
-delete movies[0].ratings[1]; // Delete the current rating
-movies[0].ratings[1] = 3; // Add a new rating using bracket notation
+
+delete movies[0].ratings[1]; 
+movies[0].ratings[1] = 3; 
 
 console.log(movies);
+
+const movies = [
+    { title: "Interstellar", details: { duration: 169, rating: "PG" } },
+    { title: "In Time", details: { duration: 109, rating: "PG-13" } },
+    { title: "Toy Story", details: { duration: 81, rating: "PG" } }
+];
+
+
+const pgFilms = movies.filter(movie => movie.details.rating === "PG");
+console.log(pgFilms);
+
+
+const totalDuration = movies.reduce((sum, movie) => sum + movie.details.duration, 0);
+const averageDuration = totalDuration / movies.length;
+console.log(`Average duration: ${averageDuration} minutes`);
